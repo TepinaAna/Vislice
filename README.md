@@ -2,7 +2,6 @@
 
 ## Avtorji
  
-* Adi Smolar
 * Ana Tepina
 * Filip Koprivec
 * Matija Pretnar
