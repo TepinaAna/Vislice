@@ -46,4 +46,3 @@ def pozeni_celotno_igro():
             break
 
 pozeni_celotno_igro()
-

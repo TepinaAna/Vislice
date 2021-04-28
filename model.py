@@ -21,7 +21,7 @@ class Igra:
         return [c for c in self.crke if c not in self.geslo]
 
     def pravilne_crke(self):
-        return [c for c in self.crke for c in self.geslo]
+        return [c for c in self.crke if c in self.geslo]
 
     def stevilo_napak(self):
         return len(self.napacne_crke())
@@ -64,7 +64,7 @@ class Igra:
         return NAPAČNA_CRKA
         
 bazen_besed = []
-with open('besede.txt', encoding='utf8') as input_file:
+with open('Vislice/besede.txt', encoding='utf8') as input_file:
     bazen_besed = input_file.readlines()
 
 def nova_igra(bazen_besed):
@@ -72,5 +72,5 @@ def nova_igra(bazen_besed):
     return Igra(beseda, '')
 
 
-i = nova_igra(bazen_besed)
-print(i.geslo)
+# i = nova_igra(bazen_besed)
+# print(i.geslo)
